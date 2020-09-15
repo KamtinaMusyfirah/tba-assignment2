@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Solway&display=swap" rel="stylesheet">
+    
+    <title>Teori Bahasa dan Otomata</title>
+  </head>
+  <body>
+    <!-- Start header -->
+    <header class="top-header">
+      <nav class="navbar header-nav navbar-expand-lg">
+          <div class="container-fluid">
+            <nav class="navbar ">
+              <span class="navbar-brand mb-0 h1">Kamtina Musyfirah</span>
+            </nav>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                  <ul class="navbar-nav">
+                      <li><a class="nav-link active" href="#">Home</a></li>
+                      <li><a class="nav-link" href="https://kamtinamusyfirah.github.io/tba-assignment1/">Teori Bahasan dan Automata</a></li>
+                      <li><a class="nav-link" href="#">Notasi Big O</a></li>
+                      <li><a class="nav-link" href="#">About</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <!-- End header -->
+
+  <!--Carousel-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Teori Bahasa dan Automata</h1>
+    </div>
+  </div>
+  <!--End Carousel-->
+
+<!-- section -->
+<div class="section light_bg">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 layout_padding padding_0">
+              <p>
+                Every good programmer will use the most effective and 
+                efficient ways to solve their problem. And to do that, we must know how to minimize the complexity.
+              </p>
+              <p>
+                Suatu    masalah    dapat    mempunyai    banyak    algoritma    penyelesaian. Algoritma  yang  digunakan  
+                <span class="theme_color"><b>tidak  saja harus  benar</b></span>,  namun  juga <span class="theme_color"><b>harus  efisien</b></span> . Efisiensi   suatu   algoritma   dapat   diukur   
+                dari   waktu   eksekusi 
+                algoritma dan kebutuhan   ruang   memori.   Algoritma   yang   efisien   adalah   algoritma   yang meminimumkan  
+                kebutuhan  waktu  dan  ruang.  Dengan  menganalisis  beberapa algoritma  untuk  suatu  masalah,  dapat  diidentifikasi  
+                satu  algoritma  yang  paling efisien. 
+                Besaran yang digunakan untuk menjelaskan model pengukuran waktu dan ruang ini adalah <span class="theme_color"><b>kompleksitas algoritma</b></span>.
+                </p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end section -->
+
+<!-- section -->
+<div class="container utama">
+<div class="section dark_bg" id="definisi">
+  <div class="container-fluid">
+     <!-- section -->
+      <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+              <div class="left">
+                <p class="section_count">01</p>
+              </div>
+              <div class="right">
+                <p class="small_tag">--------</p>
+                    <h2><span class="white_fonts">NOTASI</span> BIG <span class="white_fonts">O</span> </h2>
+                    <p class="large">DEFINISI</p>
+              </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- section -->
+      <div class="row">
+          <div class="col-lg-12 col-md-12 white_fonts layout_padding padding_0">
+              <p>
+                Notasi <i>Big O</i> diperkenalkan oleh Paul Bachmann, pertama kali di Jerman, pada tahun 1894.
+                Notasi <i>Big O</i> adalah cara untuk mengkonversi keseluruhan langkah-langkah suatu algoritma kedalam bentuk Aljabar, 
+                yaitu dengan menghiraukan konstanta yang lebih kecil dan koefisien yang tidak 
+                berdampak besar terhadap keseluruhan kompleksitas permasalahan yang diselesaikan oleh algoritma tersebut. 
+                Notasi Big O yang terdiri dari time complexity atau berapa lama algoritma itu jalan, space complexity atau 
+                berapa banyak memori yang bakal dipakai oleh algoritma.
+                <br>
+                <img src="image/bigO.png" alt="">
+                <br>
+                    Terdapat istilah yang dinamakan dengan, <i>best-case, worst-case,</i> dan <i>average-case</i> dalam komposisi data.
+                    Perhatikan contoh berikut ini:
+                    <br>
+                    <img src="image/contoh1.png" alt="">
+                    <br>
+                    Jika data yang dicari berada pada posisi terakhir, maka terjadi <i>n</i> pencarian, merupakan <i>worst-case</i>,
+                    sehingga <i>Big O = O(n)</i>. Namun jika data yang dicari berada pada posisi pertama, maka pencarian hanya dilakukan sekali,
+                    merupakan <i>best-case</i>, dengan <i>Bgi O = O(1)</i>. Kenyataan yang sering terjadi, data bisa berada dimana saja,
+                    sehingga rata-rata pencarian menjadi sebesar <i>n/2</i>, merupakan <i>average-case</i>, dengan 
+                    <i>Big O = O(n/2)</i> yang sebenarnya identik dengan <i>O(n)</i>. Kompleksitas waktu
+                    yang dinyatakan dengan <i>Big O</i> umumnya merujuk ke skenario <i>average-case</i>. 
+                  
+              </p>
+          </div>
+      </div>
+    <!-- end section -->
+
+    <!-- section -->
+    <div class="section layout_padding">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="full">
+                      <div class="heading_main text_align_left">
+            <div class="left">
+              <p class="section_count">02</p>
+            </div>
+            <div class="right">
+              <p class="small_tag">--------</p>
+                  <h2><span class="white_fonts">NOTASI</span> BIG <span class="white_fonts">O</span> </h2>
+                  <p class="large">BENTUK-BENTUK</p>
+            </div>	
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- end section -->
+
+  <!-- section -->
+<div class="container">
+  <div class="section" id="definisi">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 col-md-12 layout_padding padding_0">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-striped table-hover white_fonts">
+                    <caption class="white_fonts">Bentuk-Bentuk Notasi Big 0</caption>
+                    <thead>
+                      <tr>
+                        <th style="width: 100px;">Notation</th>
+                        <th style="width: 150px;">Name</th>
+                        <th style="width: 200px;">Definisi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> <i>O (1)</i></td>
+                        <td><i>Constant</i></td>
+                        <td>banyaknya input yang diberikan kepada sebuah algoritma, tidak akan mempengaruhi waktu proses 
+                          (<i>runtime</i>) dari algoritma tersebut.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><i>O (n)</i></td>
+                        <td><i>Linear</i></td>
+                        <td>ketika <i>runtime</i> dari fungsi kita berbanding lurus dengan jumlah input yang diberikan.
+                          semakin banyak jumlah input yang diberikan, maka waktu proses atau <i>runtime</i> dari 
+                          fungsi tersebut akan semakin besar.</td>
+                      </tr>
+                      <tr>
+                        <td><i>O (n<sup>2</sup>)</i></td>
+                        <td><i>Quadratic</i></td>
+                        <td><i>ketika runtime dari fungsi kita adalah sebesar <i>n<sup>2</sup></i>, dimana <i>n</i> adalah jumlah input dari fungsi tersebut. 
+                          Hal tersebut bisa terjadi karena kita menjalankan fungsi linear didalam fungsi linear <i>(n*n)</i>.</td>
+                      </tr>
+                      <tr>
+                        <td><i>O (n<sup>3</sup>)</i></td>
+                        <td><i>Cubic</i></td>
+                        <td>Pada algotitma kubik, bila <i>n</i> dinaikkan menjadi tiga kali semula, maka 
+                        <i>running time</i> algoritma akan menjadi delapan kali semula</td>
+                      </tr>
+                      <tr>
+                        <td><i>O (2<sup>n</sup>)</i></td>
+                        <td><i>exponential</i></td>
+                        <td>biasanya digunakan dalam situasi dimana kita tidak terlalu tahu terhadap permasalahan yang dihadapi, 
+                          sehingga mengharuskan kita mencoba setiap kombinasi dan permutasi dari semua kemungkinan.</td>
+                      </tr>
+                      <tr>
+                        <td><i>O (log n)</i></td>
+                        <td><i>Logarithmic</i></td>
+                        <td>ketika kita memberikan input sebesar <i>n</i> terhadap sebuah fungsi, jumlah tahapan yang dilakukan oleh fungsi 
+                          tersebut berkurang berdasarkan suatu faktor. Salah satu contohnya adalah algoritma <i>Binary Search</i> .
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><i>O (n log n)</i></td>
+                        <td><i>Linearithmic, loglinear, quasilinear</i></td>
+                        <td>Terdapat pada algoritma yang membagi persoalan menjadi beberapa persoalan yang kecil,
+                          menyelesaikan setiap persoalan secara independen, kemudian menggabungkan solusi masing-masing 
+                          persoalan.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><i>O (n!)</i></td>
+                        <td><i>Factorial</i></td>
+                        <td>Algoritma Factorial akan memproses setiap masukan dan menghubungkannya dengan <i>n-1</i>
+                        masukan lainnya. Bila <i>n</i> menjadi dua kali semua, maka <i>running time</i>
+                      algoritma akan menjadi faktorial dari <i>2n</i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!-- end section -->
+
+  <!-- section -->
+  <div class="section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full">
+                    <div class="heading_main text_align_left">
+          <div class="left">
+            <p class="section_count">03</p>
+          </div>
+          <div class="right">
+            <p class="small_tag">--------</p>
+                <h2><span class="white_fonts">NOTASI</span> BIG <span class="white_fonts">O</span> </h2>
+                <p class="large">KEGUNAAN</p>
+          </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- end section -->
+  
+    <!-- section -->
+    <div class="section dark_bg" id="definisi">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 white_fonts layout_padding padding_0">
+                  <h3 class="small_heading">KEGUNAAN</h3>
+                  <p>
+                    Notasi Big O dapat digunakan untuk mengukur kompleksitas suatu algoritma terhadap waktu.
+                    <i>O(n)</i> menyatakan jumlah tahap komputasi yang dilakukan untuk menjalankan suatu algoritma
+                    sebagai fungsi dari ukuran masukan <i>n</i>. Suatu algoritma memiliki kompleksitas <i>O(f(n))</i>,
+                    dibaca orde <i>f</i> terhadap <i>n</i>, jika waktu yang diperlukan oleh
+                    algoritma mengikuti laju fungsi <i>f(n)</i> dengan kondisi nilai <i>n</i> yang besar.
+
+                    Notasi Big-O berfungsi dalam mengkategorikan algoritma ke fungsi yang menggambarkan upper limit 
+                    atau batas atas dari pertumbuhan sebuah fungsi ketika masukan dari fungsi tersebut bertambah banyak 
+                    dengan menggunakan fungsi Big-O.
+    
+                    </p>
+          </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- section -->
+    <div class="section layout_padding">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="full">
+                      <div class="heading_main text_align_left">
+            <div class="left">
+              <p class="section_count">04</p>
+            </div>
+            <div class="right">
+              <p class="small_tag">--------</p>
+                  <h2><span class="white_fonts">NOTASI</span> BIG <span class="white_fonts">O</span> </h2>
+                  <p class="large">CONTOH</p>
+            </div>	
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- end section -->
+
+    <!-- section -->
+    <div class="section dark_bg" id="definisi">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 white_fonts layout_padding padding_0">
+                  <p>
+                    <img src="image/contoh2.png" alt="">
+                    <br>
+                    Kompleksitas potongan kode diatas dapat dihitung dengan mengalikan notasi-notasi setiap baris. Karena terdapat pengulangan bersarang, 
+                    maka operasi yang digunakan adalah perkalian. Artinya hasil dari pengulangan bersarang tersebut adalah: <i>O(n) * O(n) = O(n <sup>2</sup>)</i>.
+                  </p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <!-- end section -->  
+  </div>
+</div>
+</div>
+<!-- end section -->
+
+<!-- section -->
+<div class="section sumber">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 layout_padding padding_0">
+              <h3 class="small-heading">Sumber</h3>
+              <p>
+                &rarr; Buku Desain dan Analisis Algoritma karya Fanry Siahaan, M.Kom
+                <br>
+                &rarr; Buku Machine Learning & Reasoning Fuzzy Logic Algoritma, Manual, Matlab, & Rapid Miner
+                Karya Budy Santoso, Azminuddin I.S. Azis, Zohrahayaty 
+                <br>
+                &rarr; <a href="https://docplayer.info/30592099-Bab-iii-analisis-kompleksitas-algoritma.html">https://docplayer.info/30592099-Bab-iii-analisis-kompleksitas-algoritma.html</a>
+                <br>
+                &rarr; <a href="https://www.sixv.com/algoritma/algoritma-notasi-big-o/">https://www.sixv.com/algoritma/algoritma-notasi-big-o/</a>
+                <br>
+                &rarr; <a href="https://rizafahmi.com/2020/03/21/notasi-o-besar-big-o-notation/">https://rizafahmi.com/2020/03/21/notasi-o-besar-big-o-notation/</a>
+                <br>
+                &rarr; <a href="https://medium.com/bee-solution-partners/penjelasan-sederhana-tentang-time-complexity-dan-big-o-notation-4337ba275cfe">https://medium.com/bee-solution-partners/penjelasan-sederhana-tentang-time-complexity-dan-big-o-notation-4337ba275cfe</a>
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end section -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
